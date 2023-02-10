@@ -11,8 +11,6 @@ function tocaSom (seletorAudio) {
     }
 }
 
-
-
 //Variáveis
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
@@ -33,7 +31,7 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
         if (evento.code === 'Space' || evento.code === 'Enter') {
             tecla.classList.add('ativa');
         }
-
+//Teclado numérico
          if (evento.code === "Numpad1") {
         document.getElementById("btn1").click();
         listaDeTeclas[6].classList.add('ativa');
@@ -87,16 +85,9 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
         } else if (event.code === "Numpad9") {
         listaDeTeclas[2].classList.remove('ativa');
         }
-
         }
     }
-
-
-
 }
 
- document.addEventListener("keydown", function(event) {
-
-      });
 
 
