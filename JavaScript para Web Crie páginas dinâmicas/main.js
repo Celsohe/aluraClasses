@@ -1,3 +1,10 @@
+/*
+
+Adicionei os botões do teclado numérico
+relativos aos botões do webstite.
+
+*/
+
 //Seletor de Música
 function tocaSom (seletorAudio) {
     const elemento = document.querySelector(seletorAudio);
@@ -31,8 +38,8 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
         if (evento.code === 'Space' || evento.code === 'Enter') {
             tecla.classList.add('ativa');
         }
-//Teclado numérico
-         if (evento.code === "Numpad1") {
+        //keydown do teclado numérico
+        if (evento.code === "Numpad1") {
         document.getElementById("btn1").click();
         listaDeTeclas[6].classList.add('ativa');
         } else if (event.code === "Numpad2") {
@@ -61,8 +68,8 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
         listaDeTeclas[2].classList.add('ativa');
         }
 
+        //keyup do teclado numérico
         tecla.onkeyup = function () {
-
         if (evento.code === 'Space' || evento.code === 'Enter') {
             tecla.classList.remove('ativa');
         }
