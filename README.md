@@ -1,2 +1,2 @@
 # aluraClasses
-Pasta com os trabalhos finais do curso do websita da Alura.
+Pasta com os trabalhos finais do curso do website da Alura.
